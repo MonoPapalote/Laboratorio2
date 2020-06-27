@@ -1,0 +1,19 @@
+.header {
+    display: block;
+    align-items: center;  
+    background-color: $verdeAgua;  
+    svg {
+        display: flex;
+    }  
+}
+
+.logocontainer {
+    flex: 0 0 auto;    
+    &__img {
+        width: 40%;
+        height: auto;
+        margin-left: 30%;
+        margin-bottom: 3%;
+        display: block;
+    }
+}

@@ -1,0 +1,69 @@
+@import 'SCSS/abstract/variables';
+@import 'SCSS/base/_reset';
+@import 'SCSS/base/_typography';
+@import 'SCSS/components/_article';
+@import 'SCSS/components/product';
+@import 'SCSS/layout/header';
+@import 'SCSS/layout/navigation';
+
+
+@media screen and (min-width: 1080px) {       
+    .header {
+        display: flex;
+        align-items: center;  
+        background-color: $verdeAgua;              
+      }       
+         
+      .logocontainer {
+        flex: 0.7 0.7 auto; 
+        &__img {
+            margin-left: 0px;
+            margin-bottom: 0;
+            width: 30%;
+            height: auto;    
+        }
+      }      
+      
+      .nav {
+          &--header {
+            margin: auto;
+            text-align: center;  
+            background: $verdeAgua;
+            padding: 10px 0; 
+          }
+          &__list {
+            list-style: none;
+          }
+          &__item {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;        
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: $negro; 
+            .nav--subnav & {
+                margin-left: 1%; 
+            }
+          }
+          &__link {
+            color: $negro;
+            text-decoration: none;
+            font-weight: bolder;
+          }
+          &--subnav{
+            text-align: left; 
+            margin-top: 0; 
+          }
+      }   
+
+    .article {       
+        margin-left: 1%;
+        margin-top: 2%;    
+        margin-right: 40%;    
+    }
+
+    .product--container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }    
+}

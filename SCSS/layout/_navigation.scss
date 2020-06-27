@@ -1,0 +1,41 @@
+.nav {
+    &--header {
+        margin: auto;
+        text-align: center;          
+        padding: 10px 0;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        display: inline-block;
+        padding-right: 10px;
+        color: $blanco; 
+        :hover {
+            color: $azul;
+            text-decoration: underline;
+            .nav--subnav &{
+                text-decoration: underline;
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+        }       
+    }
+    &__link {
+        color: $negro;
+        text-decoration: none;
+        font-weight: bolder;
+        .nav--subnav &{
+            color: white;
+            text-decoration: none;
+        }        
+    }
+    &--subnav {
+        margin: auto;
+        text-align: center;  
+        background: $grisOscuro;
+        padding: 10px 0; 
+    }
+
+}
